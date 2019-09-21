@@ -1,0 +1,9 @@
+
+# NetBeans specific
+PortalDeAcessibilidade/nbproject/private/
+PortalDeAcessibilidade/build/
+PortalDeAcessibilidade/nbbuild/
+PortalDeAcessibilidade/dist/
+PortalDeAcessibilidade/nbdist/
+PortalDeAcessibilidade/nbactions.xml
+PortalDeAcessibilidade/nb-configuration.xml
