@@ -4,6 +4,7 @@ public class OpcoesTeste extends javax.swing.JFrame {
 
     public OpcoesTeste() {
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
    
@@ -12,70 +13,91 @@ public class OpcoesTeste extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        CaixaDeTestes = new javax.swing.JPanel();
         Holgreen = new javax.swing.JButton();
         Nagel = new javax.swing.JButton();
         Ishihara = new javax.swing.JButton();
-        TesteCores = new javax.swing.JLabel();
-        Las = new javax.swing.JLabel();
-        Anomaloscopio = new javax.swing.JLabel();
-        Fundo3D = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
+        setExtendedState(6);
+        setMaximumSize(new java.awt.Dimension(1024, 768));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setLayout(null);
+        CaixaDeTestes.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        Holgreen.setText("Holgreen");
-        jPanel1.add(Holgreen);
-        Holgreen.setBounds(228, 119, 75, 80);
+        Holgreen.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        Holgreen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Holgreen.setText("Holgreem");
+        Holgreen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Holgreen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HolgreenActionPerformed(evt);
+            }
+        });
 
+        Nagel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Nagel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
         Nagel.setText("Nagel");
-        jPanel1.add(Nagel);
-        Nagel.setBounds(400, 119, 80, 80);
+        Nagel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        Ishihara.setBackground(new java.awt.Color(0, 0, 0));
+        Ishihara.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Ishihara.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
         Ishihara.setText("Ishihara");
+        Ishihara.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         Ishihara.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 IshiharaActionPerformed(evt);
             }
         });
-        jPanel1.add(Ishihara);
-        Ishihara.setBounds(60, 119, 71, 80);
 
-        TesteCores.setBackground(new java.awt.Color(255, 255, 255));
-        TesteCores.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        TesteCores.setForeground(new java.awt.Color(255, 255, 255));
-        TesteCores.setText("Teste de cores de Ishihara");
-        jPanel1.add(TesteCores);
-        TesteCores.setBounds(15, 211, 180, 17);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Nagel, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Ishihara, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Holgreen, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+                .addComponent(CaixaDeTestes, javax.swing.GroupLayout.PREFERRED_SIZE, 797, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Ishihara, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(Holgreen, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(Nagel, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CaixaDeTestes, javax.swing.GroupLayout.PREFERRED_SIZE, 652, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36))
+        );
 
-        Las.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        Las.setForeground(new java.awt.Color(255, 255, 255));
-        Las.setText("Lãs de Holgreen");
-        jPanel1.add(Las);
-        Las.setBounds(215, 211, 110, 17);
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 690));
 
-        Anomaloscopio.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        Anomaloscopio.setForeground(new java.awt.Color(255, 255, 255));
-        Anomaloscopio.setText("Anomaloscópio de Nagel");
-        jPanel1.add(Anomaloscopio);
-        Anomaloscopio.setBounds(355, 211, 170, 17);
-
-        Fundo3D.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/fundo-3d-banner16.jpg"))); // NOI18N
-        jPanel1.add(Fundo3D);
-        Fundo3D.setBounds(0, 0, 535, 352);
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 330));
-
-        pack();
+        setSize(new java.awt.Dimension(1183, 734));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void IshiharaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IshiharaActionPerformed
-        // TODO add your handling code here:
-        new TesteIshihara().setVisible(true);
+
+//        new TesteIshihara().setVisible(true);
+        TesteIshiharaCaixa TelaIshihara = new TesteIshiharaCaixa();
+        CaixaDeTestes.add(TelaIshihara);
+        TelaIshihara.setVisible(true);
+        
     }//GEN-LAST:event_IshiharaActionPerformed
+
+    private void HolgreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HolgreenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_HolgreenActionPerformed
 
    
     public static void main(String args[]) {
@@ -110,13 +132,10 @@ public class OpcoesTeste extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Anomaloscopio;
-    private javax.swing.JLabel Fundo3D;
+    private javax.swing.JPanel CaixaDeTestes;
     private javax.swing.JButton Holgreen;
     private javax.swing.JButton Ishihara;
-    private javax.swing.JLabel Las;
     private javax.swing.JButton Nagel;
-    private javax.swing.JLabel TesteCores;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

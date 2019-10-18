@@ -7,3 +7,5 @@ PortalDeAcessibilidade/dist/
 PortalDeAcessibilidade/nbdist/
 PortalDeAcessibilidade/nbactions.xml
 PortalDeAcessibilidade/nb-configuration.xml
+/testess/nbproject/private/
+/testess/build
