@@ -11,23 +11,23 @@ public class TesteIshihara extends javax.swing.JFrame {
     int pos = 0;
     int soma = 0;
 
-    public TesteIshihara() 
-    {
+    public TesteIshihara() {
+        setExtendedState(OpcoesTeste.MAXIMIZED_BOTH);
+        setUndecorated(true);
         initComponents();
         showImage(pos);
         
     }
     
-    public String[] getImages()
-    {
+    public String[] getImages() {
 
      File file = new File(getClass().getResource("/Imagens").getFile());
      String[] imagesList = file.list();
 
       return imagesList;
     }
-     public void showImage(int index)
-    {
+    
+    public void showImage(int index) {
         String[] imagesList = getImages();
         String imageName = imagesList[index];
         ImageIcon icon = new ImageIcon(getClass().getResource("/Imagens/"+imageName));
@@ -61,9 +61,15 @@ public class TesteIshihara extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1920, 1080));
+        setMinimumSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
+        jPanel1.setMaximumSize(new java.awt.Dimension(1920, 1080));
+        jPanel1.setMinimumSize(new java.awt.Dimension(1280, 720));
+        jPanel1.setName(""); // NOI18N
+        jPanel1.setPreferredSize(new java.awt.Dimension(1366, 768));
         jPanel1.setLayout(null);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -275,7 +281,7 @@ public class TesteIshihara extends javax.swing.JFrame {
         NumDigitado.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         NumDigitado.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         NumDigitado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 3));
-        NumDigitado.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        NumDigitado.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         NumDigitado.setSelectionEnd(2);
         NumDigitado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -302,11 +308,11 @@ public class TesteIshihara extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 621, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -314,13 +320,10 @@ public class TesteIshihara extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Numero1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Numero1ActionPerformed
-        // TODO add your handling code here:
-       NumDigitado.setText(NumDigitado.getText()+"1");
-
+        NumDigitado.setText(NumDigitado.getText()+"1");
     }//GEN-LAST:event_Numero1ActionPerformed
 
     private void Btn_AceitarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_AceitarActionPerformed
-        // TODO add your handling code here:
         int NumeroDigitadoSalvo = Integer.parseInt(NumDigitado.getText());
         ListNumDigitado.add(NumeroDigitadoSalvo);
         this.soma = this.soma + Integer.parseInt(NumDigitado.getText());
@@ -435,21 +438,15 @@ public class TesteIshihara extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TesteIshihara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TesteIshihara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TesteIshihara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(TesteIshihara.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
+        //</editor-fold>
 
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new TesteIshihara().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new TesteIshihara().setVisible(true);
         });
     }
 

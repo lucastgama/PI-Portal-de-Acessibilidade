@@ -1,103 +1,113 @@
-
 package portaldeacessibilidade;
+
+import java.awt.Color;
+
 public class OpcoesTeste extends javax.swing.JFrame {
 
-    public OpcoesTeste() {
+    public OpcoesTeste() {  
+        setExtendedState(OpcoesTeste.MAXIMIZED_BOTH);
+        setUndecorated(true);
         initComponents();
-        setExtendedState(MAXIMIZED_BOTH);
-    }
+    }   
 
-   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        CaixaDeTestes = new javax.swing.JPanel();
-        Holgreen = new javax.swing.JButton();
-        Nagel = new javax.swing.JButton();
-        Ishihara = new javax.swing.JButton();
+        jDesktopPane1 = new javax.swing.JDesktopPane();
+        btnIshihara = new javax.swing.JButton();
+        btnHolmgreen = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
         setExtendedState(6);
-        setMaximumSize(new java.awt.Dimension(1024, 768));
+        setMaximumSize(new java.awt.Dimension(1920, 1080));
+        setMinimumSize(new java.awt.Dimension(1280, 720));
+        setSize(new java.awt.Dimension(1366, 768));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        CaixaDeTestes.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jDesktopPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jDesktopPane1.setMaximumSize(new java.awt.Dimension(1920, 1080));
+        jDesktopPane1.setMinimumSize(new java.awt.Dimension(1280, 720));
+        jDesktopPane1.setName(""); // NOI18N
+        jDesktopPane1.setPreferredSize(new java.awt.Dimension(1366, 768));
 
-        Holgreen.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        Holgreen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
-        Holgreen.setText("Holgreem");
-        Holgreen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Holgreen.addActionListener(new java.awt.event.ActionListener() {
+        btnIshihara.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btnIshihara.setText("Ishihara");
+        btnIshihara.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnIshihara.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                HolgreenActionPerformed(evt);
+                btnIshiharaActionPerformed(evt);
             }
         });
 
-        Nagel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Nagel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
-        Nagel.setText("Nagel");
-        Nagel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        Ishihara.setBackground(new java.awt.Color(0, 0, 0));
-        Ishihara.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Ishihara.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
-        Ishihara.setText("Ishihara");
-        Ishihara.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Ishihara.addActionListener(new java.awt.event.ActionListener() {
+        btnHolmgreen.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btnHolmgreen.setText("Holmgreen");
+        btnHolmgreen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnHolmgreen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                IshiharaActionPerformed(evt);
+                btnHolmgreenActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Nagel, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Ishihara, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Holgreen, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
-                .addComponent(CaixaDeTestes, javax.swing.GroupLayout.PREFERRED_SIZE, 797, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45))
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
+        jLabel1.setText("PORTAL DE ACESSIBILIDADE");
+
+        jDesktopPane1.setLayer(btnIshihara, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(btnHolmgreen, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap(322, Short.MAX_VALUE)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
+                        .addComponent(btnHolmgreen, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(176, 176, 176)
+                        .addComponent(btnIshihara, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(308, 308, 308))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(350, 350, 350))))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(Ishihara, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(Holgreen, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(Nagel, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(CaixaDeTestes, javax.swing.GroupLayout.PREFERRED_SIZE, 652, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(36, 36, 36))
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addGap(95, 95, 95)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnHolmgreen, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnIshihara, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(152, 152, 152))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 690));
+        getContentPane().add(jDesktopPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 770));
 
-        setSize(new java.awt.Dimension(1183, 734));
+        setSize(new java.awt.Dimension(1386, 808));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void IshiharaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IshiharaActionPerformed
-
-//        new TesteIshihara().setVisible(true);
-        TesteIshiharaCaixa TelaIshihara = new TesteIshiharaCaixa();
-        CaixaDeTestes.add(TelaIshihara);
+    private void btnIshiharaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIshiharaActionPerformed
+        new TesteIshihara().setVisible(true);
+        TesteIshihara TelaIshihara = new TesteIshihara();
+        jDesktopPane1.add(TelaIshihara);
+        this.setExtendedState(MAXIMIZED_BOTH);
         TelaIshihara.setVisible(true);
         
-    }//GEN-LAST:event_IshiharaActionPerformed
+    }//GEN-LAST:event_btnIshiharaActionPerformed
 
-    private void HolgreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HolgreenActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_HolgreenActionPerformed
+    private void btnHolmgreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHolmgreenActionPerformed
+        new OpcoesHolmgreen().setVisible(true);
+        OpcoesHolmgreen TelaHolmgreen = new OpcoesHolmgreen();
+        jDesktopPane1.add(TelaHolmgreen);
+        this.setExtendedState(MAXIMIZED_BOTH);
+        TelaHolmgreen.setVisible(true);
+    }//GEN-LAST:event_btnHolmgreenActionPerformed
 
    
     public static void main(String args[]) {
@@ -132,10 +142,9 @@ public class OpcoesTeste extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel CaixaDeTestes;
-    private javax.swing.JButton Holgreen;
-    private javax.swing.JButton Ishihara;
-    private javax.swing.JButton Nagel;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton btnHolmgreen;
+    private javax.swing.JButton btnIshihara;
+    private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
