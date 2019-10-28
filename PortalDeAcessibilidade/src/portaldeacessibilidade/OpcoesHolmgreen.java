@@ -6,7 +6,6 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
         setExtendedState(OpcoesTeste.MAXIMIZED_BOTH);
         setUndecorated(true);
         initComponents();  
-        jTextPane1.setBorder(null);
     }
     
         
@@ -23,6 +22,7 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
         lblHolmgreen = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
+        lblBackground = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -68,7 +68,6 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
         jPanel1.add(btnDeuteranopia);
         btnDeuteranopia.setBounds(130, 520, 260, 110);
 
-        btnVoltar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnVoltar.setText("VOLTAR");
         btnVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,8 +84,7 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
 
         jScrollPane2.setBorder(null);
 
-        jTextPane1.setBackground(new java.awt.Color(204, 204, 204));
-        jTextPane1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jTextPane1.setBorder(null);
         jTextPane1.setBorder(null);
         jTextPane1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jTextPane1.setText("  Lãs de Holmgreen (ou Holmgreen) são pequenos feixes de lãs coloridas que são utilizados para diagnóstico do daltonismo. \n\n  A execução desse teste consiste em pedir que o paciente separe uma porção de lãs especialmente pintadas em cores ligeiramente diferentes. \n\n  Esses feixes de lãs devem ser selecionados de uma maneira em que o mesmo corresponda ao gabarito. \n\n  Conforme a distorção das cores pode-se determinar o tipo de daltonismo.\n\n  O paciente deverá realizar os três testes disponíveis para uma melhor eficácia no diagnóstico do mesmo.");
@@ -95,6 +93,11 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2);
         jScrollPane2.setBounds(100, 190, 1160, 260);
+
+        lblBackground.setBackground(new java.awt.Color(255, 255, 255));
+        lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/background.jpg"))); // NOI18N
+        jPanel1.add(lblBackground);
+        lblBackground.setBounds(0, 0, 1370, 770);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -128,19 +131,19 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDeuteranopiaActionPerformed
 
     private void btnProtanopiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProtanopiaActionPerformed
-        new HolmgreenProtanopia().setVisible(true);
-        HolmgreenProtanopia TelaProtanopia = new HolmgreenProtanopia();
-        jPanel1.add(TelaProtanopia);
-        this.setExtendedState(MAXIMIZED_BOTH);
-        TelaProtanopia.setVisible(true);
+//        new HolmgreenProtanopia().setVisible(true);
+//        HolmgreenProtanopia TelaProtanopia = new HolmgreenProtanopia();
+//        jPanel1.add(TelaProtanopia);
+//        this.setExtendedState(MAXIMIZED_BOTH);
+//        TelaProtanopia.setVisible(true);
     }//GEN-LAST:event_btnProtanopiaActionPerformed
 
     private void btnTritanopiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTritanopiaActionPerformed
-        new HolmgreenTritanopia().setVisible(true);
-        HolmgreenTritanopia TelaTritanopia = new HolmgreenTritanopia();
-        jPanel1.add(TelaTritanopia);
-        this.setExtendedState(MAXIMIZED_BOTH);
-        TelaTritanopia.setVisible(true);
+//        new HolmgreenTritanopia().setVisible(true);
+//        HolmgreenTritanopia TelaTritanopia = new HolmgreenTritanopia();
+//        jPanel1.add(TelaTritanopia);
+//        this.setExtendedState(MAXIMIZED_BOTH);
+//        TelaTritanopia.setVisible(true);
         
     }//GEN-LAST:event_btnTritanopiaActionPerformed
 
@@ -182,6 +185,7 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JLabel lblBackground;
     private javax.swing.JLabel lblHolmgreen;
     // End of variables declaration//GEN-END:variables
 }

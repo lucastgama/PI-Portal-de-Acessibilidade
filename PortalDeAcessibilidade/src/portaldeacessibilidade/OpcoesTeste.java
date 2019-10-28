@@ -1,20 +1,37 @@
 package portaldeacessibilidade;
 
-import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import javax.swing.*;
 
 public class OpcoesTeste extends javax.swing.JFrame {
+    
+    private BufferedImage img;
 
     public OpcoesTeste() {  
         setExtendedState(OpcoesTeste.MAXIMIZED_BOTH);
         setUndecorated(true);
         initComponents();
-    }   
+    } 
+    
+   
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        ImageIcon icon = new ImageIcon(getClass().getResource("/Menu/background.jpg"));
+        Image image = icon.getImage();
+        jDesktopPane1 = new javax.swing.JDesktopPane(){
+
+            public void paintComponent(Graphics g){
+                g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
+            }
+
+        };
+        btnSair = new javax.swing.JButton();
         btnIshihara = new javax.swing.JButton();
         btnHolmgreen = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -32,6 +49,13 @@ public class OpcoesTeste extends javax.swing.JFrame {
         jDesktopPane1.setMinimumSize(new java.awt.Dimension(1280, 720));
         jDesktopPane1.setName(""); // NOI18N
         jDesktopPane1.setPreferredSize(new java.awt.Dimension(1366, 768));
+
+        btnSair.setText("SAIR");
+        btnSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSairActionPerformed(evt);
+            }
+        });
 
         btnIshihara.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnIshihara.setText("Ishihara");
@@ -54,6 +78,7 @@ public class OpcoesTeste extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
         jLabel1.setText("PORTAL DE ACESSIBILIDADE");
 
+        jDesktopPane1.setLayer(btnSair, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(btnIshihara, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(btnHolmgreen, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -67,17 +92,21 @@ public class OpcoesTeste extends javax.swing.JFrame {
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
                         .addComponent(btnHolmgreen, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(176, 176, 176)
+                        .addGap(153, 153, 153)
                         .addComponent(btnIshihara, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(308, 308, 308))
+                        .addGap(331, 331, 331))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(350, 350, 350))))
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
+                .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(64, 64, 64)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -92,15 +121,6 @@ public class OpcoesTeste extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnIshiharaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIshiharaActionPerformed
-        new TesteIshihara().setVisible(true);
-        TesteIshihara TelaIshihara = new TesteIshihara();
-        jDesktopPane1.add(TelaIshihara);
-        this.setExtendedState(MAXIMIZED_BOTH);
-        TelaIshihara.setVisible(true);
-        
-    }//GEN-LAST:event_btnIshiharaActionPerformed
-
     private void btnHolmgreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHolmgreenActionPerformed
         new OpcoesHolmgreen().setVisible(true);
         OpcoesHolmgreen TelaHolmgreen = new OpcoesHolmgreen();
@@ -108,6 +128,19 @@ public class OpcoesTeste extends javax.swing.JFrame {
         this.setExtendedState(MAXIMIZED_BOTH);
         TelaHolmgreen.setVisible(true);
     }//GEN-LAST:event_btnHolmgreenActionPerformed
+
+    private void btnIshiharaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIshiharaActionPerformed
+        new TesteIshihara().setVisible(true);
+        TesteIshihara TelaIshihara = new TesteIshihara();
+        jDesktopPane1.add(TelaIshihara);
+        this.setExtendedState(MAXIMIZED_BOTH);
+        TelaIshihara.setVisible(true);
+
+    }//GEN-LAST:event_btnIshiharaActionPerformed
+
+    private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSairActionPerformed
 
    
     public static void main(String args[]) {
@@ -144,6 +177,7 @@ public class OpcoesTeste extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnHolmgreen;
     private javax.swing.JButton btnIshihara;
+    private javax.swing.JButton btnSair;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
