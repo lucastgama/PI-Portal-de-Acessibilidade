@@ -20,8 +20,10 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
         btnDeuteranopia = new javax.swing.JButton();
         btnVoltar = new javax.swing.JButton();
         lblHolmgreen = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         lblBackground = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
@@ -39,34 +41,34 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         btnTritanopia.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnTritanopia.setText("TESTE TRITANOPIA ");
+        btnTritanopia.setText("TRITANOPIA ");
         btnTritanopia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTritanopiaActionPerformed(evt);
             }
         });
         jPanel1.add(btnTritanopia);
-        btnTritanopia.setBounds(970, 520, 260, 110);
+        btnTritanopia.setBounds(970, 430, 260, 110);
 
         btnProtanopia.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnProtanopia.setText("TESTE PROTANOPIA ");
+        btnProtanopia.setText("PROTANOPIA ");
         btnProtanopia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProtanopiaActionPerformed(evt);
             }
         });
         jPanel1.add(btnProtanopia);
-        btnProtanopia.setBounds(550, 520, 260, 110);
+        btnProtanopia.setBounds(550, 430, 260, 110);
 
         btnDeuteranopia.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnDeuteranopia.setText("TESTE DEUTERANOPIA ");
+        btnDeuteranopia.setText("DEUTERANOPIA ");
         btnDeuteranopia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeuteranopiaActionPerformed(evt);
             }
         });
         jPanel1.add(btnDeuteranopia);
-        btnDeuteranopia.setBounds(130, 520, 260, 110);
+        btnDeuteranopia.setBounds(130, 430, 260, 110);
 
         btnVoltar.setText("VOLTAR");
         btnVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -82,17 +84,25 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
         jPanel1.add(lblHolmgreen);
         lblHolmgreen.setBounds(360, 60, 650, 90);
 
-        jScrollPane2.setBorder(null);
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel2.setText("O paciente deverá selecionar uma porção de lãs especialmente pintadas em cores ligeiramente diferentes ");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(70, 210, 1210, 40);
 
-        jTextPane1.setBorder(null);
-        jTextPane1.setBorder(null);
-        jTextPane1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jTextPane1.setText("  Lãs de Holmgreen (ou Holmgreen) são pequenos feixes de lãs coloridas que são utilizados para diagnóstico do daltonismo. \n\n  A execução desse teste consiste em pedir que o paciente separe uma porção de lãs especialmente pintadas em cores ligeiramente diferentes. \n\n  Esses feixes de lãs devem ser selecionados de uma maneira em que o mesmo corresponda ao gabarito. \n\n  Conforme a distorção das cores pode-se determinar o tipo de daltonismo.\n\n  O paciente deverá realizar os três testes disponíveis para uma melhor eficácia no diagnóstico do mesmo.");
-        jTextPane1.setCaretPosition(0);
-        jScrollPane2.setViewportView(jTextPane1);
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel3.setText("Conforme a distorção das cores, pode-se determinar o tipo de daltonismo do paciente");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(190, 260, 990, 40);
 
-        jPanel1.add(jScrollPane2);
-        jScrollPane2.setBounds(100, 190, 1160, 260);
+        jLabel4.setFont(new java.awt.Font("Arial", 0, 30)); // NOI18N
+        jLabel4.setText("O paciente deverá realizar os três testes disponíveis para uma melhor eficácia no diagnóstico");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(60, 590, 1260, 36);
+
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel5.setText("Existem três tipos de daltonismo, que serão testados durante este teste");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(270, 310, 820, 40);
 
         lblBackground.setBackground(new java.awt.Color(255, 255, 255));
         lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/background.jpg"))); // NOI18N
@@ -182,9 +192,11 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
     private javax.swing.JButton btnTritanopia;
     private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JLabel lblBackground;
     private javax.swing.JLabel lblHolmgreen;
     // End of variables declaration//GEN-END:variables

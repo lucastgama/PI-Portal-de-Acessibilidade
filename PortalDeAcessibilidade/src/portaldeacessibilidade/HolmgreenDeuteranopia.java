@@ -6,8 +6,6 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
         setExtendedState(OpcoesTeste.MAXIMIZED_BOTH);
         setUndecorated(true);
         initComponents();
-        panelRes.setVisible(false);
-        lblResultado.setVisible(false);
     }
     
         
@@ -31,12 +29,7 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
         btnVerificar = new javax.swing.JButton();
         btnApagar = new javax.swing.JButton();
         txtNumDigitado = new javax.swing.JTextField();
-        lblResultado = new javax.swing.JLabel();
         lblInformacoes = new javax.swing.JLabel();
-        panelRes = new javax.swing.JPanel();
-        scrollRes = new javax.swing.JScrollPane();
-        areaRes = new javax.swing.JTextArea();
-        btnVoltarMenu = new javax.swing.JButton();
         lblBackground = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
@@ -166,7 +159,7 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnVerificar);
-        btnVerificar.setBounds(1080, 610, 200, 50);
+        btnVerificar.setBounds(730, 620, 200, 50);
 
         btnApagar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnApagar.setText("APAGAR");
@@ -176,7 +169,7 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnApagar);
-        btnApagar.setBounds(830, 610, 200, 50);
+        btnApagar.setBounds(430, 620, 200, 50);
 
         txtNumDigitado.setBackground(new java.awt.Color(240, 240, 240));
         txtNumDigitado.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -185,56 +178,12 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtNumDigitado);
-        txtNumDigitado.setBounds(960, 540, 200, 50);
-
-        lblResultado.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        lblResultado.setText("RESULTADO");
-        jPanel1.add(lblResultado);
-        lblResultado.setBounds(190, 500, 230, 40);
+        txtNumDigitado.setBounds(580, 530, 200, 50);
 
         lblInformacoes.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblInformacoes.setText("Selecione as lãs que determinar como sendo de diferentes tonalidades da cor verde!");
         jPanel1.add(lblInformacoes);
         lblInformacoes.setBounds(340, 100, 690, 60);
-
-        areaRes.setEditable(false);
-        areaRes.setColumns(20);
-        areaRes.setRows(5);
-        areaRes.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                areaResKeyTyped(evt);
-            }
-        });
-        scrollRes.setViewportView(areaRes);
-
-        btnVoltarMenu.setText("VOLTAR AO MENU DE TESTES");
-        btnVoltarMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVoltarMenuActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelResLayout = new javax.swing.GroupLayout(panelRes);
-        panelRes.setLayout(panelResLayout);
-        panelResLayout.setHorizontalGroup(
-            panelResLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(scrollRes)
-            .addGroup(panelResLayout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addComponent(btnVoltarMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(92, Short.MAX_VALUE))
-        );
-        panelResLayout.setVerticalGroup(
-            panelResLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelResLayout.createSequentialGroup()
-                .addComponent(scrollRes, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnVoltarMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(panelRes);
-        panelRes.setBounds(110, 540, 390, 190);
 
         lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/background.jpg"))); // NOI18N
         jPanel1.add(lblBackground);
@@ -298,29 +247,19 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
         int NumeroDigitado = Integer.parseInt(txtNumDigitado.getText());
         if (NumeroDigitado != 123) {
-            lblResultado.setVisible(true);
-            panelRes.setVisible(true);
-            String appendText = "O paciente possui nível baixo de Deuteranopia. \nRecomendamos que o mesmo procure um oftalmologista! \nNão esqueça de realizar os outros testes! \nUtilize o botão logo abaixo.";
-            areaRes.setText(appendText);
+            new TelaResDeutPositivo().setVisible(true);
+            TelaResDeutPositivo TelaResNeg = new TelaResDeutPositivo();
+            jPanel1.add(TelaResNeg);
+            this.setExtendedState(MAXIMIZED_BOTH);
+            TelaResNeg.setVisible(true);
         } else {
-            lblResultado.setVisible(true);
-            panelRes.setVisible(true);
-            String appendText = "O paciente não possui Deuteranopia. \nNão esqueça de realizar os outros testes! \nUtilize o botão logo abaixo.";
-            areaRes.setText(appendText);
+            new TelaResDeutNegativo().setVisible(true);
+            TelaResDeutNegativo TelaResPos = new TelaResDeutNegativo();
+            jPanel1.add(TelaResPos);
+            this.setExtendedState(MAXIMIZED_BOTH);
+            TelaResPos.setVisible(true);
         }
     }//GEN-LAST:event_btnVerificarActionPerformed
-
-    private void btnVoltarMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarMenuActionPerformed
-        new OpcoesHolmgreen().setVisible(true);
-        OpcoesHolmgreen TelaHolmgreen = new OpcoesHolmgreen();
-        jPanel1.add(TelaHolmgreen);
-        this.setExtendedState(MAXIMIZED_BOTH);
-        TelaHolmgreen.setVisible(true);
-    }//GEN-LAST:event_btnVoltarMenuActionPerformed
-
-    private void areaResKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_areaResKeyTyped
-        areaRes.setEditable(false);
-    }//GEN-LAST:event_areaResKeyTyped
 
     private void txtNumDigitadoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNumDigitadoKeyTyped
         txtNumDigitado.setEditable(false);
@@ -362,7 +301,6 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea areaRes;
     private javax.swing.JButton btnApagar;
     private javax.swing.JButton btnLã1;
     private javax.swing.JButton btnLã10;
@@ -375,15 +313,11 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
     private javax.swing.JButton btnLã8;
     private javax.swing.JButton btnLã9;
     private javax.swing.JButton btnVerificar;
-    private javax.swing.JButton btnVoltarMenu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblBackground;
     private javax.swing.JLabel lblDeuteranopia;
     private javax.swing.JLabel lblInformacoes;
-    private javax.swing.JLabel lblResultado;
-    private javax.swing.JPanel panelRes;
-    private javax.swing.JScrollPane scrollRes;
     private javax.swing.JTextField txtNumDigitado;
     // End of variables declaration//GEN-END:variables
 }
