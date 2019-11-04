@@ -10,9 +10,6 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1920, 1080]"/>
-    </Property>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[1280, 720]"/>
     </Property>
@@ -73,11 +70,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="48" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="TESTE DE DEUTERANOPIA"/>
+            <Property name="text" type="java.lang.String" value="TESTE DE PROTANOPIA"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="360" y="50" width="630" height="80"/>
+              <AbsoluteConstraints x="400" y="50" width="570" height="80"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -293,11 +290,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="18" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Selecione as l&#xe3;s que determinar como sendo de diferentes tonalidades da cor verde"/>
+            <Property name="text" type="java.lang.String" value="Selecione as l&#xe3;s que determinar como sendo de diferentes tonalidades da cor vermelha"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="340" y="100" width="690" height="60"/>
+              <AbsoluteConstraints x="330" y="100" width="710" height="60"/>
             </Constraint>
           </Constraints>
         </Component>

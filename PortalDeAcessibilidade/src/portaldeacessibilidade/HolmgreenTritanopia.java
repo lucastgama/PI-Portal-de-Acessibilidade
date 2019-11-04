@@ -1,8 +1,8 @@
 package portaldeacessibilidade;
 
-public class HolmgreenDeuteranopia extends javax.swing.JFrame {
+public class HolmgreenTritanopia extends javax.swing.JFrame {
 
-    public HolmgreenDeuteranopia() {
+    public HolmgreenTritanopia() {
         setExtendedState(OpcoesTeste.MAXIMIZED_BOTH);
         setUndecorated(true);
         initComponents();
@@ -36,7 +36,6 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
 
@@ -48,9 +47,9 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         lblDeuteranopia.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
-        lblDeuteranopia.setText("TESTE DE DEUTERANOPIA");
+        lblDeuteranopia.setText("TESTE DE TRITANOPIA");
         jPanel1.add(lblDeuteranopia);
-        lblDeuteranopia.setBounds(360, 50, 630, 80);
+        lblDeuteranopia.setBounds(410, 50, 550, 80);
 
         btnLã1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnLã1.setText("*imagem lã 1*");
@@ -182,9 +181,9 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
         txtNumDigitado.setBounds(580, 530, 200, 50);
 
         lblInformacoes.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        lblInformacoes.setText("Selecione as lãs que determinar como sendo de diferentes tonalidades da cor verde");
+        lblInformacoes.setText("Selecione as lãs que determinar como sendo de diferentes tonalidades da cor amarela");
         jPanel1.add(lblInformacoes);
-        lblInformacoes.setBounds(340, 100, 690, 60);
+        lblInformacoes.setBounds(340, 100, 700, 60);
 
         lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/background.jpg"))); // NOI18N
         jPanel1.add(lblBackground);
@@ -254,14 +253,14 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
         if (soma == 20) {
-            new TelaResDeutNegativo().setVisible(true);
-            TelaResDeutNegativo TelaResNeg = new TelaResDeutNegativo();
+            new TelaResTritNegativo().setVisible(true);
+            TelaResTritNegativo TelaResNeg = new TelaResTritNegativo();
             jPanel1.add(TelaResNeg);
             this.setExtendedState(MAXIMIZED_BOTH);
             TelaResNeg.setVisible(true);
         } else {
-            new TelaResDeutPositivo().setVisible(true);
-            TelaResDeutPositivo TelaResPos = new TelaResDeutPositivo();
+            new TelaResTritPositivo().setVisible(true);
+            TelaResTritPositivo TelaResPos = new TelaResTritPositivo();
             jPanel1.add(TelaResPos);
             this.setExtendedState(MAXIMIZED_BOTH);
             TelaResPos.setVisible(true);
@@ -290,21 +289,25 @@ public class HolmgreenDeuteranopia extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HolmgreenDeuteranopia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HolmgreenTritanopia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HolmgreenDeuteranopia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HolmgreenTritanopia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HolmgreenDeuteranopia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HolmgreenTritanopia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HolmgreenDeuteranopia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HolmgreenTritanopia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         java.awt.EventQueue.invokeLater(() -> {
-            new HolmgreenDeuteranopia().setVisible(true);
+            new HolmgreenTritanopia().setVisible(true);
         });
     }
 

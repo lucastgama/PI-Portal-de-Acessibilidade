@@ -82,7 +82,7 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
         lblHolmgreen.setFont(new java.awt.Font("Arial", 0, 60)); // NOI18N
         lblHolmgreen.setText("LÃS DE HOLMGREEN");
         jPanel1.add(lblHolmgreen);
-        lblHolmgreen.setBounds(360, 60, 650, 90);
+        lblHolmgreen.setBounds(370, 60, 630, 90);
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
         jLabel2.setText("O paciente deverá selecionar uma porção de lãs especialmente pintadas em cores ligeiramente diferentes ");
@@ -141,19 +141,19 @@ public class OpcoesHolmgreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDeuteranopiaActionPerformed
 
     private void btnProtanopiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProtanopiaActionPerformed
-//        new HolmgreenProtanopia().setVisible(true);
-//        HolmgreenProtanopia TelaProtanopia = new HolmgreenProtanopia();
-//        jPanel1.add(TelaProtanopia);
-//        this.setExtendedState(MAXIMIZED_BOTH);
-//        TelaProtanopia.setVisible(true);
+        new HolmgreenProtanopia().setVisible(true);
+        HolmgreenProtanopia TelaProtanopia = new HolmgreenProtanopia();
+        jPanel1.add(TelaProtanopia);
+        this.setExtendedState(MAXIMIZED_BOTH);
+        TelaProtanopia.setVisible(true);
     }//GEN-LAST:event_btnProtanopiaActionPerformed
 
     private void btnTritanopiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTritanopiaActionPerformed
-//        new HolmgreenTritanopia().setVisible(true);
-//        HolmgreenTritanopia TelaTritanopia = new HolmgreenTritanopia();
-//        jPanel1.add(TelaTritanopia);
-//        this.setExtendedState(MAXIMIZED_BOTH);
-//        TelaTritanopia.setVisible(true);
+        new HolmgreenTritanopia().setVisible(true);
+        HolmgreenTritanopia TelaTritanopia = new HolmgreenTritanopia();
+        jPanel1.add(TelaTritanopia);
+        this.setExtendedState(MAXIMIZED_BOTH);
+        TelaTritanopia.setVisible(true);
         
     }//GEN-LAST:event_btnTritanopiaActionPerformed
 
