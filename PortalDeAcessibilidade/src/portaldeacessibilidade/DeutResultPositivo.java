@@ -69,7 +69,7 @@ public class DeutResultPositivo extends javax.swing.JPanel {
             }
         });
         jPanel1.add(btnVoltarMenu);
-        btnVoltarMenu.setBounds(530, 530, 290, 80);
+        btnVoltarMenu.setBounds(530, 600, 290, 80);
 
         lblTexto1.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
         lblTexto1.setText("O paciente possui um nível baixo de Deuteranopia");
@@ -84,7 +84,7 @@ public class DeutResultPositivo extends javax.swing.JPanel {
         lblTexto3.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
         lblTexto3.setText("Não esqueça de realizar todos os testes utilizando o botão abaixo!");
         jPanel1.add(lblTexto3);
-        lblTexto3.setBounds(150, 470, 1070, 40);
+        lblTexto3.setBounds(150, 530, 1070, 40);
 
         lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/background.jpg"))); // NOI18N
         jPanel1.add(lblBackground);
