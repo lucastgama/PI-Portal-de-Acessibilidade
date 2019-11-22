@@ -398,21 +398,21 @@ public class Ishihara extends javax.swing.JPanel {
         
        if(contador == 21)
         {
-           if(soma <=500 && soma >=396 )
+           if(soma <= 512 && soma >= 408)
            {
             jDesktopPane.removeAll();
             IshiharaResultNegativo TelaResNeg = new IshiharaResultNegativo(jDesktopPane);
             jDesktopPane.add(TelaResNeg);
             TelaResNeg.setVisible(true);  
            }
-           else if (soma <= 207 && soma >=270)
+           else if (soma <= 219 && soma >= 282)
            {
             jDesktopPane.removeAll();
             IshiharaResuProtonopia Protonopia = new IshiharaResuProtonopia(jDesktopPane);
             jDesktopPane.add(Protonopia);
             Protonopia.setVisible(true);
            } 
-           else if ( soma <=344 && soma >= 479 )
+           else if ( soma <= 356 && soma >= 491 )
            {
             jDesktopPane.removeAll();
             IshiharaResuDeuteranopia Deuteranopia = new IshiharaResuDeuteranopia(jDesktopPane);
