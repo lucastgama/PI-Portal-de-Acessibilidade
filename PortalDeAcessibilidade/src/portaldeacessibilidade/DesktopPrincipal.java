@@ -26,7 +26,7 @@ public class DesktopPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("/Menu/background.jpg"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/Background/background.jpg"));
         Image image = icon.getImage();
         jDesktopPane1 = new javax.swing.JDesktopPane(){
 
