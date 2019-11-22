@@ -49,8 +49,7 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã9 = new javax.swing.JButton();
         btnLã10 = new javax.swing.JButton();
         btnVerificar = new javax.swing.JButton();
-        btnApagar = new javax.swing.JButton();
-        txtNumDigitado = new javax.swing.JTextField();
+        btnReset = new javax.swing.JButton();
         lblInformacoes = new javax.swing.JLabel();
         lblBackground = new javax.swing.JLabel();
 
@@ -72,7 +71,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         lblDeuteranopia.setBounds(410, 50, 550, 80);
 
         btnLã1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã1.setText("*imagem lã 1*");
+        btnLã1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button01.png"))); // NOI18N
+        btnLã1.setBorder(null);
         btnLã1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã1ActionPerformed(evt);
@@ -82,7 +82,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã1.setBounds(80, 180, 200, 110);
 
         btnLã2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã2.setText("*imagem lã 2*");
+        btnLã2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button02.png"))); // NOI18N
+        btnLã2.setBorder(null);
         btnLã2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã2ActionPerformed(evt);
@@ -92,7 +93,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã2.setBounds(330, 180, 200, 110);
 
         btnLã3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã3.setText("*imagem lã 3*");
+        btnLã3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button03.png"))); // NOI18N
+        btnLã3.setBorder(null);
         btnLã3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã3ActionPerformed(evt);
@@ -102,7 +104,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã3.setBounds(580, 180, 200, 110);
 
         btnLã4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã4.setText("*imagem lã 4*");
+        btnLã4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button04.png"))); // NOI18N
+        btnLã4.setBorder(null);
         btnLã4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã4ActionPerformed(evt);
@@ -112,7 +115,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã4.setBounds(830, 180, 200, 110);
 
         btnLã5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã5.setText("*imagem lã 5*");
+        btnLã5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button05.png"))); // NOI18N
+        btnLã5.setBorder(null);
         btnLã5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã5ActionPerformed(evt);
@@ -122,7 +126,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã5.setBounds(1080, 180, 200, 110);
 
         btnLã6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã6.setText("*imagem lã 6*");
+        btnLã6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button06.png"))); // NOI18N
+        btnLã6.setBorder(null);
         btnLã6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã6ActionPerformed(evt);
@@ -132,7 +137,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã6.setBounds(80, 340, 200, 110);
 
         btnLã7.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã7.setText("*imagem lã 7*");
+        btnLã7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button07.png"))); // NOI18N
+        btnLã7.setBorder(null);
         btnLã7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã7ActionPerformed(evt);
@@ -142,7 +148,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã7.setBounds(330, 340, 200, 110);
 
         btnLã8.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã8.setText("*imagem lã 8*");
+        btnLã8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button08.png"))); // NOI18N
+        btnLã8.setBorder(null);
         btnLã8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã8ActionPerformed(evt);
@@ -152,7 +159,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã8.setBounds(580, 340, 200, 110);
 
         btnLã9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã9.setText("*imagem lã 9*");
+        btnLã9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button09.png"))); // NOI18N
+        btnLã9.setBorder(null);
         btnLã9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã9ActionPerformed(evt);
@@ -162,7 +170,8 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         btnLã9.setBounds(830, 340, 200, 110);
 
         btnLã10.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnLã10.setText("*imagem lã 10*");
+        btnLã10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ButtonsTrit/Button10.png"))); // NOI18N
+        btnLã10.setBorder(null);
         btnLã10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLã10ActionPerformed(evt);
@@ -179,26 +188,17 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
             }
         });
         jPanel1.add(btnVerificar);
-        btnVerificar.setBounds(730, 620, 200, 50);
+        btnVerificar.setBounds(720, 570, 210, 90);
 
-        btnApagar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnApagar.setText("APAGAR");
-        btnApagar.addActionListener(new java.awt.event.ActionListener() {
+        btnReset.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnReset.setText("RECOMEÇAR");
+        btnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnApagarActionPerformed(evt);
+                btnResetActionPerformed(evt);
             }
         });
-        jPanel1.add(btnApagar);
-        btnApagar.setBounds(430, 620, 200, 50);
-
-        txtNumDigitado.setBackground(new java.awt.Color(240, 240, 240));
-        txtNumDigitado.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtNumDigitadoKeyTyped(evt);
-            }
-        });
-        jPanel1.add(txtNumDigitado);
-        txtNumDigitado.setBounds(580, 530, 200, 50);
+        jPanel1.add(btnReset);
+        btnReset.setBounds(420, 570, 210, 90);
 
         lblInformacoes.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblInformacoes.setText("Selecione as lãs que determinar como sendo de diferentes tonalidades da cor amarela");
@@ -222,50 +222,52 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLã1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã1ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "1 ");
-        soma += 5;
+        this.btnLã1.setVisible(false);
+        soma += 100;
     }//GEN-LAST:event_btnLã1ActionPerformed
 
     private void btnLã2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã2ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "2 ");
+        this.btnLã2.setVisible(false);
         soma += 100;
     }//GEN-LAST:event_btnLã2ActionPerformed
 
     private void btnLã3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã3ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "3 ");
-        soma += 100;
+        this.btnLã3.setVisible(false);
+        soma += 5;
     }//GEN-LAST:event_btnLã3ActionPerformed
 
     private void btnLã4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã4ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "4 ");
-        soma += 5;
+        this.btnLã4.setVisible(false);
+        soma += 100;
     }//GEN-LAST:event_btnLã4ActionPerformed
 
     private void btnLã5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã5ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "5 ");
+        this.btnLã5.setVisible(false);
         soma += 100;
     }//GEN-LAST:event_btnLã5ActionPerformed
 
     private void btnLã6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã6ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "6 ");
-        soma += 100;
+        this.btnLã6.setVisible(false);
+        soma += 5;
     }//GEN-LAST:event_btnLã6ActionPerformed
 
     private void btnLã7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã7ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "7 ");
-        soma += 5;
+        this.btnLã7.setVisible(false);
+        soma += 100;
     }//GEN-LAST:event_btnLã7ActionPerformed
 
     private void btnLã8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã8ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "8 ");
+        this.btnLã8.setVisible(false);
+        soma += 100;
     }//GEN-LAST:event_btnLã8ActionPerformed
 
     private void btnLã9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã9ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "9 ");
+        this.btnLã9.setVisible(false);
+        soma += 5;
     }//GEN-LAST:event_btnLã9ActionPerformed
 
     private void btnLã10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLã10ActionPerformed
-        txtNumDigitado.setText(txtNumDigitado.getText() + "10 ");
+        this.btnLã10.setVisible(false);
         soma += 5;
     }//GEN-LAST:event_btnLã10ActionPerformed
 
@@ -283,17 +285,21 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnVerificarActionPerformed
 
-    private void btnApagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApagarActionPerformed
-        txtNumDigitado.setText(" ");
-    }//GEN-LAST:event_btnApagarActionPerformed
-
-    private void txtNumDigitadoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNumDigitadoKeyTyped
-        txtNumDigitado.setEditable(false);
-    }//GEN-LAST:event_txtNumDigitadoKeyTyped
+    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+        this.btnLã1.setVisible(true);
+        this.btnLã2.setVisible(true);
+        this.btnLã3.setVisible(true);
+        this.btnLã4.setVisible(true);
+        this.btnLã5.setVisible(true);
+        this.btnLã6.setVisible(true);
+        this.btnLã7.setVisible(true);
+        this.btnLã8.setVisible(true);
+        this.btnLã9.setVisible(true);
+        this.btnLã10.setVisible(true);
+    }//GEN-LAST:event_btnResetActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnApagar;
     private javax.swing.JButton btnLã1;
     private javax.swing.JButton btnLã10;
     private javax.swing.JButton btnLã2;
@@ -304,11 +310,11 @@ public class HolmgreenTritanopia extends javax.swing.JPanel {
     private javax.swing.JButton btnLã7;
     private javax.swing.JButton btnLã8;
     private javax.swing.JButton btnLã9;
+    private javax.swing.JButton btnReset;
     private javax.swing.JButton btnVerificar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblBackground;
     private javax.swing.JLabel lblDeuteranopia;
     private javax.swing.JLabel lblInformacoes;
-    private javax.swing.JTextField txtNumDigitado;
     // End of variables declaration//GEN-END:variables
 }
