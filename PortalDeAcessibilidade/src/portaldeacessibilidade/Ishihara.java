@@ -12,7 +12,6 @@ import java.io.File;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JDesktopPane;
-
 /**
  *
  * @author Claudinei
@@ -22,6 +21,7 @@ public class Ishihara extends javax.swing.JPanel {
     ArrayList<Integer> ListNumDigitado = new ArrayList<>();
     int pos = 0;
     int soma = 0;
+    int contador = 0;
     /**
      * Creates new form OpcoesTeste3
      */
@@ -62,7 +62,6 @@ public class Ishihara extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         ImagemIshihara = new javax.swing.JLabel();
         Numero1 = new javax.swing.JButton();
@@ -79,19 +78,14 @@ public class Ishihara extends javax.swing.JPanel {
         Btn_Nada = new javax.swing.JButton();
         Btn_Desfazer = new javax.swing.JButton();
         NumDigitado = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        btnVoltar = new javax.swing.JButton();
+        background = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1280, 720));
         setOpaque(false);
         setPreferredSize(new java.awt.Dimension(1366, 768));
-
-        jPanel1.setBackground(new java.awt.Color(230, 230, 230));
-        jPanel1.setMaximumSize(new java.awt.Dimension(1920, 1080));
-        jPanel1.setMinimumSize(new java.awt.Dimension(1280, 720));
-        jPanel1.setName(""); // NOI18N
-        jPanel1.setPreferredSize(new java.awt.Dimension(1366, 768));
-        jPanel1.setLayout(null);
+        setLayout(null);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -101,20 +95,28 @@ public class Ishihara extends javax.swing.JPanel {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ImagemIshihara, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
+            .addGap(0, 420, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(ImagemIshihara, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(ImagemIshihara, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 410, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(ImagemIshihara, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(20, 55, 420, 410);
+        add(jPanel2);
+        jPanel2.setBounds(30, 110, 420, 410);
 
         Numero1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero1.setText("1");
         Numero1.setBorderPainted(false);
         Numero1.setContentAreaFilled(false);
@@ -126,11 +128,11 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero1ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero1);
-        Numero1.setBounds(460, 60, 100, 90);
+        add(Numero1);
+        Numero1.setBounds(520, 110, 250, 60);
 
         Numero2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero2.setText("2");
         Numero2.setBorderPainted(false);
         Numero2.setContentAreaFilled(false);
@@ -140,11 +142,11 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero2ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero2);
-        Numero2.setBounds(570, 60, 100, 90);
+        add(Numero2);
+        Numero2.setBounds(790, 110, 250, 60);
 
         Numero3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero3.setText("3");
         Numero3.setBorderPainted(false);
         Numero3.setContentAreaFilled(false);
@@ -154,11 +156,11 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero3ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero3);
-        Numero3.setBounds(680, 60, 110, 90);
+        add(Numero3);
+        Numero3.setBounds(1050, 110, 260, 60);
 
         Numero4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero4.setText("4");
         Numero4.setToolTipText("");
         Numero4.setBorderPainted(false);
@@ -169,11 +171,11 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero4ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero4);
-        Numero4.setBounds(460, 160, 100, 90);
+        add(Numero4);
+        Numero4.setBounds(520, 210, 250, 60);
 
         Numero5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero5.setText("5");
         Numero5.setToolTipText("");
         Numero5.setBorderPainted(false);
@@ -184,11 +186,11 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero5ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero5);
-        Numero5.setBounds(570, 160, 100, 90);
+        add(Numero5);
+        Numero5.setBounds(790, 210, 250, 60);
 
         Numero6.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero6.setText("6");
         Numero6.setBorderPainted(false);
         Numero6.setContentAreaFilled(false);
@@ -198,12 +200,12 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero6ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero6);
-        Numero6.setBounds(680, 160, 110, 90);
+        add(Numero6);
+        Numero6.setBounds(1050, 210, 260, 60);
 
         Numero7.setBackground(new java.awt.Color(0, 0, 0));
         Numero7.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero7.setText("7");
         Numero7.setBorderPainted(false);
         Numero7.setContentAreaFilled(false);
@@ -213,11 +215,11 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero7ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero7);
-        Numero7.setBounds(460, 260, 100, 90);
+        add(Numero7);
+        Numero7.setBounds(520, 300, 250, 60);
 
         Numero8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero8.setText("8");
         Numero8.setBorderPainted(false);
         Numero8.setContentAreaFilled(false);
@@ -227,11 +229,11 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero8ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero8);
-        Numero8.setBounds(570, 260, 100, 90);
+        add(Numero8);
+        Numero8.setBounds(790, 300, 250, 60);
 
         Numero9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero9.setText("9");
         Numero9.setBorderPainted(false);
         Numero9.setContentAreaFilled(false);
@@ -241,11 +243,11 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero9ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero9);
-        Numero9.setBounds(680, 260, 110, 90);
+        add(Numero9);
+        Numero9.setBounds(1050, 300, 260, 60);
 
         Numero0.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        Numero0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Numero0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Numero0.setText("0");
         Numero0.setBorderPainted(false);
         Numero0.setContentAreaFilled(false);
@@ -255,11 +257,11 @@ public class Ishihara extends javax.swing.JPanel {
                 Numero0ActionPerformed(evt);
             }
         });
-        jPanel1.add(Numero0);
-        Numero0.setBounds(570, 360, 100, 90);
+        add(Numero0);
+        Numero0.setBounds(790, 390, 250, 60);
 
-        Btn_Aceitar.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        Btn_Aceitar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Btn_Aceitar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Btn_Aceitar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Btn_Aceitar.setText("Confirma");
         Btn_Aceitar.setBorderPainted(false);
         Btn_Aceitar.setContentAreaFilled(false);
@@ -270,21 +272,26 @@ public class Ishihara extends javax.swing.JPanel {
                 Btn_AceitarActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_Aceitar);
-        Btn_Aceitar.setBounds(460, 520, 100, 90);
+        add(Btn_Aceitar);
+        Btn_Aceitar.setBounds(510, 580, 260, 60);
 
-        Btn_Nada.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        Btn_Nada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Btn_Nada.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Btn_Nada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Btn_Nada.setText("Nada");
         Btn_Nada.setBorderPainted(false);
         Btn_Nada.setContentAreaFilled(false);
         Btn_Nada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Btn_Nada.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(Btn_Nada);
-        Btn_Nada.setBounds(690, 520, 100, 90);
+        Btn_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_NadaActionPerformed(evt);
+            }
+        });
+        add(Btn_Nada);
+        Btn_Nada.setBounds(1060, 580, 250, 60);
 
-        Btn_Desfazer.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        Btn_Desfazer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botao/aleatorio.png"))); // NOI18N
+        Btn_Desfazer.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Btn_Desfazer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/flat-buttons_1_.png"))); // NOI18N
         Btn_Desfazer.setText("Apagar");
         Btn_Desfazer.setBorderPainted(false);
         Btn_Desfazer.setContentAreaFilled(false);
@@ -295,8 +302,8 @@ public class Ishihara extends javax.swing.JPanel {
                 Btn_DesfazerActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_Desfazer);
-        Btn_Desfazer.setBounds(580, 520, 100, 90);
+        add(Btn_Desfazer);
+        Btn_Desfazer.setBounds(790, 580, 250, 60);
 
         NumDigitado.setEditable(false);
         NumDigitado.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -317,24 +324,21 @@ public class Ishihara extends javax.swing.JPanel {
                 NumDigitadoKeyTyped(evt);
             }
         });
-        jPanel1.add(NumDigitado);
-        NumDigitado.setBounds(460, 460, 330, 50);
+        add(NumDigitado);
+        NumDigitado.setBounds(750, 500, 330, 50);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        jLabel2.setText("Digite o número que esta sendo exibido");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(180, 0, 430, 40);
+        btnVoltar.setText("VOLTAR");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVoltarActionPerformed(evt);
+            }
+        });
+        add(btnVoltar);
+        btnVoltar.setBounds(0, 0, 80, 30);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Background/background.jpg"))); // NOI18N
+        add(background);
+        background.setBounds(0, 0, 1370, 770);
     }// </editor-fold>//GEN-END:initComponents
 
     private void Numero1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Numero1ActionPerformed
@@ -389,7 +393,40 @@ public class Ishihara extends javax.swing.JPanel {
     private void Btn_AceitarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_AceitarActionPerformed
         int NumeroDigitadoSalvo = Integer.parseInt(NumDigitado.getText());
         ListNumDigitado.add(NumeroDigitadoSalvo);
+        ListNumDigitado.add(contador++);
         this.soma = this.soma + Integer.parseInt(NumDigitado.getText());
+        
+       if(contador == 21)
+        {
+           if(soma <=500 && soma >=396 )
+           {
+            jDesktopPane.removeAll();
+            IshiharaResultNegativo TelaResNeg = new IshiharaResultNegativo(jDesktopPane);
+            jDesktopPane.add(TelaResNeg);
+            TelaResNeg.setVisible(true);  
+           }
+           else if (soma <= 207 && soma >=270)
+           {
+            jDesktopPane.removeAll();
+            IshiharaResuProtonopia Protonopia = new IshiharaResuProtonopia(jDesktopPane);
+            jDesktopPane.add(Protonopia);
+            Protonopia.setVisible(true);
+           } 
+           else if ( soma <=344 && soma >= 479 )
+           {
+            jDesktopPane.removeAll();
+            IshiharaResuDeuteranopia Deuteranopia = new IshiharaResuDeuteranopia(jDesktopPane);
+            jDesktopPane.add(Deuteranopia);
+            Deuteranopia.setVisible(true);
+           }
+           else
+           {
+            jDesktopPane.removeAll();
+            IshiharaResuAcromatico acromatico = new IshiharaResuAcromatico(jDesktopPane);
+            jDesktopPane.add(acromatico);
+            acromatico.setVisible(true);
+           }
+        }
 
         // Faz com que seja trocado as imagens
         pos = pos + 1;
@@ -419,6 +456,62 @@ public class Ishihara extends javax.swing.JPanel {
         NumDigitado.setEditable(false);
     }//GEN-LAST:event_NumDigitadoKeyTyped
 
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+        jDesktopPane.removeAll();
+        MenuPrincipal TelaTeste = new MenuPrincipal(jDesktopPane);
+        TelaTeste.setVisible(true);
+        jDesktopPane.add(TelaTeste);
+    }//GEN-LAST:event_btnVoltarActionPerformed
+
+    private void Btn_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_NadaActionPerformed
+        NumDigitado.setText("0");
+        ListNumDigitado.add(contador++);
+        int NumeroDigitadoSalvo = Integer.parseInt(NumDigitado.getText());
+        ListNumDigitado.add(NumeroDigitadoSalvo);
+        this.soma = this.soma + Integer.parseInt(NumDigitado.getText());
+
+        if(contador == 21)
+        {
+           if(soma <=500 && soma >=396 )
+           {
+            jDesktopPane.removeAll();
+            IshiharaResultNegativo TelaResNeg = new IshiharaResultNegativo(jDesktopPane);
+            jDesktopPane.add(TelaResNeg);
+            TelaResNeg.setVisible(true);  
+           }
+           else if (soma <= 207 && soma >=270)
+           {
+            jDesktopPane.removeAll();
+            IshiharaResuProtonopia Protonopia = new IshiharaResuProtonopia(jDesktopPane);
+            jDesktopPane.add(Protonopia);
+            Protonopia.setVisible(true);
+           } 
+           else if ( soma <=344 && soma >= 479 )
+           {
+            jDesktopPane.removeAll();
+            IshiharaResuDeuteranopia Deuteranopia = new IshiharaResuDeuteranopia(jDesktopPane);
+            jDesktopPane.add(Deuteranopia);
+            Deuteranopia.setVisible(true);
+           }
+           else
+           {
+            jDesktopPane.removeAll();
+            IshiharaResuAcromatico acromatico = new IshiharaResuAcromatico(jDesktopPane);
+            jDesktopPane.add(acromatico);
+            acromatico.setVisible(true);
+           }
+        }
+        
+        // Faz com que seja trocado as imagens
+        pos = pos + 1;
+        if(pos >= getImages().length)
+        {
+            pos  = getImages().length - 1;
+        }
+        showImage(pos);
+        NumDigitado.setText("");
+    }//GEN-LAST:event_Btn_NadaActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btn_Aceitar;
@@ -436,8 +529,8 @@ public class Ishihara extends javax.swing.JPanel {
     private javax.swing.JButton Numero7;
     private javax.swing.JButton Numero8;
     private javax.swing.JButton Numero9;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel background;
+    private javax.swing.JButton btnVoltar;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
