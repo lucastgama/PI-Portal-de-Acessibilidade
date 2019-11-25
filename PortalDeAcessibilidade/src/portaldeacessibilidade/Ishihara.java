@@ -62,6 +62,7 @@ public class Ishihara extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         ImagemIshihara = new javax.swing.JLabel();
         Numero1 = new javax.swing.JButton();
@@ -86,6 +87,11 @@ public class Ishihara extends javax.swing.JPanel {
         setOpaque(false);
         setPreferredSize(new java.awt.Dimension(1366, 768));
         setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabel1.setText("Teste de Ishihara");
+        add(jLabel1);
+        jLabel1.setBounds(770, 30, 300, 50);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -531,6 +537,7 @@ public class Ishihara extends javax.swing.JPanel {
     private javax.swing.JButton Numero9;
     private javax.swing.JLabel background;
     private javax.swing.JButton btnVoltar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

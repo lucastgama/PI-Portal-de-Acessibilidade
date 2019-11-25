@@ -107,7 +107,6 @@ public class MenuPrincipal extends javax.swing.JPanel {
         Ishihara TelaIshihara = new Ishihara(jDesktopPane);
         jDesktopPane.add(TelaIshihara);
         TelaIshihara.setVisible(true);
-
     }//GEN-LAST:event_btnIshiharaActionPerformed
 
     private void btnHolmgreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHolmgreenActionPerformed
@@ -115,7 +114,6 @@ public class MenuPrincipal extends javax.swing.JPanel {
         Holmgreen TelaHolmgreen = new Holmgreen(this.jDesktopPane);
         jDesktopPane.add(TelaHolmgreen);
         TelaHolmgreen.setVisible(true);
-        jDesktopPane.removeAll();
     }//GEN-LAST:event_btnHolmgreenActionPerformed
 
 
